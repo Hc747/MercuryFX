@@ -1,0 +1,40 @@
+TextField, PasswordField {
+    -fx-background-color: #32364a;
+    -fx-text-fill: #DC6180;
+    -fx-border-color: #393d52;
+}
+
+Hyperlink {
+    -fx-underline: false;
+    -fx-border-style: none;
+    -fx-text-fill: #afb1be;
+}
+
+Hyperlink:hover {
+    -fx-text-fill: #DC6180;
+}
+
+Label {
+    -fx-text-fill: #afb1be;
+}
+
+#login-container {
+    -fx-background-color: #35394a;
+    -fx-border-color: #404556;
+    -fx-border-width: 2px;
+}
+
+.rounded-button {
+    -fx-text-fill: #DC6180;
+    -fx-background-radius: 50px;
+    -fx-background-color: transparent;
+    -fx-padding: 10px 50px;
+    -fx-border-color: #DC6180;
+    -fx-border-radius: 50px;
+    -fx-border-width: 2px;
+}
+
+.rounded-button:hover, .rounded-button:focused {
+    -fx-background-color: #DC6180;
+    -fx-text-fill: #afb1be;
+}
