@@ -2,7 +2,7 @@ $primary: #DC6180;
 $text: #AFB1BE;
 $container_background: #35394A;
 $textfield_background: #32364A;
-$textfield_border: #393D52;
+$textfield_border: $text;
 
 * {
   -fx-text-fill: $text;
@@ -10,10 +10,11 @@ $textfield_border: #393D52;
 
 TextField, PasswordField {
   -fx-background-color: $textfield_background;
-  -fx-text-fill: $primary;
   -fx-border-color: $textfield_border;
   -fx-background-radius: 25;
   -fx-border-radius: 25;
+  -fx-border-width: 2px;
+  -fx-text-fill: $primary;
 
   &:focused {
     -fx-border-color: $primary;
@@ -44,9 +45,16 @@ Hyperlink {
   -fx-border-color: $primary;
   -fx-border-radius: 50px;
   -fx-border-width: 2px;
-}
 
-.rounded-button:hover {
-  -fx-background-color: $primary;
-  -fx-text-fill: $text;
+  &:hover {
+    -fx-background-color: $primary;
+    -fx-text-fill: $text;
+  }
+
+  &:disabled {
+    -fx-text-fill: $textfield_border;
+    -fx-border-color: $textfield_border;
+    -fx-opacity: 1.0;
+  }
+
 }

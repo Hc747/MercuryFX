@@ -4,10 +4,11 @@
 
 TextField, PasswordField {
   -fx-background-color: #32364A;
-  -fx-text-fill: #DC6180;
-  -fx-border-color: #393D52;
+  -fx-border-color: #AFB1BE;
   -fx-background-radius: 25;
   -fx-border-radius: 25;
+  -fx-border-width: 2px;
+  -fx-text-fill: #DC6180;
 }
 TextField:focused, PasswordField:focused {
   -fx-border-color: #DC6180;
@@ -37,8 +38,12 @@ Hyperlink:hover {
   -fx-border-radius: 50px;
   -fx-border-width: 2px;
 }
-
 .rounded-button:hover {
   -fx-background-color: #DC6180;
   -fx-text-fill: #AFB1BE;
+}
+.rounded-button:disabled {
+  -fx-text-fill: #AFB1BE;
+  -fx-border-color: #AFB1BE;
+  -fx-opacity: 1.0;
 }
