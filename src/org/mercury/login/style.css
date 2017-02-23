@@ -8,6 +8,7 @@ Hyperlink {
     -fx-underline: false;
     -fx-border-style: none;
     -fx-text-fill: #afb1be;
+    -fx-font-size: 9;
 }
 
 Hyperlink:hover {
