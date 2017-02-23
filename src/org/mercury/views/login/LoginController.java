@@ -1,4 +1,4 @@
-package org.mercury.login;
+package org.mercury.views.login;
 
 import javafx.fxml.FXML;
 import javafx.fxml.Initializable;
@@ -26,7 +26,7 @@ public final class LoginController implements Initializable {
 	private TextField username;
 
 	@FXML
-	private TextField auth;
+	private TextField shelter;
 
 	@FXML
 	private PasswordField password;

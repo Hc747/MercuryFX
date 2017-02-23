@@ -1,4 +1,4 @@
-package org.mercury.messenger;
+package org.mercury.views.management;
 
 import javafx.fxml.Initializable;
 
@@ -10,7 +10,7 @@ import java.util.ResourceBundle;
  * @version 1.0
  * @since 23/2/17
  */
-public final class MessengerController implements Initializable {
+public final class ManagementController implements Initializable {
 
 	@Override
 	public void initialize(URL location, ResourceBundle resources) {

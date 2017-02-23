@@ -17,7 +17,7 @@ public final class Mercury extends Application {
 
 	@Override
 	public void start(Stage stage) throws IOException {
-		final Parent root = FXMLLoader.load(getClass().getResource("./login/login.fxml"));
+		final Parent root = FXMLLoader.load(getClass().getResource("views/login/login.fxml"));
 		stage.setTitle("Mercury");
 		stage.setResizable(false);
 
