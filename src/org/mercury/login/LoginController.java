@@ -26,13 +26,16 @@ public final class LoginController implements Initializable {
 	private TextField username;
 
 	@FXML
+	private TextField auth;
+
+	@FXML
 	private PasswordField password;
 
 	@FXML
 	private Hyperlink recovery;
 
 	@FXML
-	private CheckBox remember;
+	private Hyperlink help;
 
 	@FXML
 	private void login() {

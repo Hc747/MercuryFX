@@ -20,7 +20,7 @@ Label {
 
 #login-container {
     -fx-background-color: #35394a;
-    -fx-border-color: #404556;
+    -fx-border-color: linear-gradient(from 0% 0% to 100% 100%, #EA5C54, #BB6DEC);
     -fx-border-width: 2px;
 }
 
@@ -28,13 +28,13 @@ Label {
     -fx-text-fill: #DC6180;
     -fx-background-radius: 50px;
     -fx-background-color: transparent;
-    -fx-padding: 10px 50px;
+    -fx-padding: 10px 25px;
     -fx-border-color: #DC6180;
     -fx-border-radius: 50px;
     -fx-border-width: 2px;
 }
 
-.rounded-button:hover, .rounded-button:focused {
+.rounded-button:hover {
     -fx-background-color: #DC6180;
     -fx-text-fill: #afb1be;
 }
