@@ -30,7 +30,7 @@
                 <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
                 <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
                 <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
-            <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
             </rowConstraints>
             <TextField fx:id="username" alignment="CENTER" promptText="Username" GridPane.columnIndex="1" />
             <PasswordField fx:id="password" alignment="CENTER" prefWidth="167.0" promptText="Password" GridPane.columnIndex="1" GridPane.rowIndex="2" />
@@ -50,19 +50,19 @@
             </bottom>
         </BorderPane>
         <BorderPane prefHeight="200.0" prefWidth="200.0" GridPane.rowIndex="3">
-         <top>
+            <top>
                 <Hyperlink fx:id="recovery" onAction="#recover" text="Forgotten password?" textAlignment="CENTER" BorderPane.alignment="CENTER"/>
-         </top>
-         <center>
-            <Label text="© Mercury 2017" BorderPane.alignment="CENTER">
-               <font>
-                  <Font size="9.0" />
-               </font>
-            </Label>
-         </center>
+            </top>
+            <center>
+                <Label text="© Mercury 2017" BorderPane.alignment="CENTER">
+                    <font>
+                        <Font size="9.0" />
+                    </font>
+                </Label>
+            </center>
         </BorderPane>
     </GridPane>
-   <stylesheets>
-      <URL value="@style.css" />
-   </stylesheets>
+    <stylesheets>
+        <URL value="@./css/style.css" />
+    </stylesheets>
 </AnchorPane>
