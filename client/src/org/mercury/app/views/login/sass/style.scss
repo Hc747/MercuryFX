@@ -1,0 +1,66 @@
+@import "constants";
+
+* {
+  -fx-text-fill: $text;
+}
+
+TextField, PasswordField {
+  -fx-background-color: $textfield_background;
+  -fx-border-color: $textfield_border;
+  $radius: 25;
+  -fx-background-radius: $radius;
+  -fx-border-radius: $radius;
+  -fx-border-width: 2px;
+  -fx-text-fill: $primary;
+
+  &:focused {
+    -fx-border-color: $primary;
+  }
+}
+
+Hyperlink {
+  -fx-underline: false;
+  -fx-border-style: none;
+  -fx-font-size: 9;
+
+  &:focused {
+    //TODO contemplate leaving default or red
+    //TODO underline under label text
+    -fx-border-color: linear-gradient(from 0% 0% to 100% 100%, #EA5C54, #BB6DEC);
+    $radius: 25;
+    -fx-border-radius: $radius;
+  }
+
+  &:hover {
+    -fx-text-fill: $primary;
+  }
+}
+
+#login-container {
+  -fx-background-color: $container_background;
+  -fx-border-color:linear-gradient(from 0% 0% to 100% 100%, #EA5C54, #BB6DEC);
+  -fx-border-width: 2px;
+}
+
+.rounded-button {
+  -fx-text-fill: $primary;
+  -fx-padding: 10px 25px;
+  -fx-background-color: $textfield_background;
+  $radius: 50;
+  -fx-background-radius: $radius;
+  -fx-border-radius: $radius;
+  -fx-border-color: $primary;
+  -fx-border-width: 2px;
+
+  &:hover {
+    -fx-background-color: $primary;
+    -fx-text-fill: $text;
+  }
+
+  &:disabled {
+    -fx-text-fill: $textfield_border;
+    -fx-border-color: $textfield_border;
+    -fx-opacity: 1.0;
+  }
+
+}
