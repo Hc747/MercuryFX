@@ -13,7 +13,7 @@
 <?import javafx.scene.layout.RowConstraints?>
 <?import javafx.scene.text.Font?>
 
-<AnchorPane minHeight="-Infinity" minWidth="-Infinity" prefHeight="340.0" prefWidth="240.0" xmlns="http://javafx.com/javafx/8.0.112" xmlns:fx="http://javafx.com/fxml/1" fx:controller="org.mercury.app.views.login.LoginController">
+<AnchorPane minHeight="-Infinity" minWidth="-Infinity" prefHeight="340.0" prefWidth="240.0" xmlns="http://javafx.com/javafx/8.0.71" xmlns:fx="http://javafx.com/fxml/1" fx:controller="org.mercury.app.views.login.LoginController">
     <GridPane id="login-container" minHeight="-Infinity" minWidth="-Infinity" prefHeight="340.0" prefWidth="240.0">
         <columnConstraints>
             <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
@@ -35,6 +35,10 @@
             <TextField fx:id="shelter" alignment="CENTER" promptText="Shelter Code" GridPane.columnIndex="1" />
             <TextField fx:id="username" alignment="CENTER" promptText="Username" GridPane.columnIndex="1" GridPane.rowIndex="2" />
             <PasswordField fx:id="password" alignment="CENTER" prefWidth="167.0" promptText="Password" GridPane.columnIndex="1" GridPane.rowIndex="4" />
+         <columnConstraints>
+            <ColumnConstraints />
+            <ColumnConstraints />
+         </columnConstraints>
         </GridPane>
         <BorderPane prefHeight="200.0" prefWidth="200.0">
             <center>
