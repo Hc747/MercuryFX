@@ -25,28 +25,7 @@ public final class MercuryApp extends Application {
 
 	@Override
 	public void init() {
-		/*final Task<ChannelFuture> connect = Task.callable("connect", () -> {
-			final ChannelFuture future = reactor.connect("127.0.0.1", 43595);
-			future.addListener(connection -> {
-				Preconditions.checkArgument(connection.isSuccess(), "Could not reach the server!");
-				System.out.println("Connected to the server!");
-			});
-			future.channel().closeFuture().addListener(close -> {
-				System.out.println("Connection to the server closed!");
-			});
-			return future;
-		});
-		engine.getEngine().run(connect);*/
 
-		/*final String hostname = "127.0.0.1";
-		final int port = 43595;
-		final ChannelFuture future = reactor.connect("127.0.0.1", 43595);
-		future.addListener(connection -> {
-			System.out.println(String.format("Reactor %ssuccessfully connected to %s:%d", connection.isSuccess() ? "" : "un", hostname, port));
-			if (connection.isSuccess()) {
-				future.channel().closeFuture().addListener(close -> System.out.println("Connection to the server was lost!"));
-			}
-		});*/
 	}
 
 	@Override
@@ -59,20 +38,6 @@ public final class MercuryApp extends Application {
 		stage.setScene(scene);
 
 		stage.show();
-
-		/*final Task<ChannelFuture> connect = Task.value("connect", reactor.connect("127.0.0.1", 43595));
-		final Task<ChannelFuture> onConnection = connect.andThen(future -> {
-			future.addListener(connection -> {
-				Preconditions.checkArgument(connection.isSuccess(), "Could not reach the server!");
-				System.out.println("Connected to the server!");
-			});
-			future.channel().closeFuture().addListener(close -> {
-				System.out.println("Connection to the server closed!");
-			});
-		});
-
-
-		engine.getEngine().run(onConnection);*/
 	}
 
 	@Override
